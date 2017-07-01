@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form hotkey 
+Begin VB.Form configureHotKeyForm 
    Appearance      =   0  'Flat
    BorderStyle     =   0  'None
    ClientHeight    =   4035
@@ -239,7 +239,7 @@ Begin VB.Form hotkey
       Width           =   2415
    End
 End
-Attribute VB_Name = "hotkey"
+Attribute VB_Name = "configureHotKeyForm"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

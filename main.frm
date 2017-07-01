@@ -7,18 +7,26 @@ Begin VB.Form main
    ClientHeight    =   4065
    ClientLeft      =   4815
    ClientTop       =   2985
-   ClientWidth     =   9015
+   ClientWidth     =   9000
    Icon            =   "main.frx":0000
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    Picture         =   "main.frx":0B3A
    ScaleHeight     =   4065
-   ScaleWidth      =   9015
+   ScaleWidth      =   9000
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Visible         =   0   'False
    WhatsThisHelp   =   -1  'True
+   Begin VB.TextBox txtevent 
+      Height          =   285
+      Left            =   2640
+      TabIndex        =   22
+      Text            =   "Text1"
+      Top             =   3360
+      Width           =   255
+   End
    Begin VB.PictureBox Picture1 
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
@@ -26,7 +34,7 @@ Begin VB.Form main
       Left            =   630
       ScaleHeight     =   1665
       ScaleWidth      =   2115
-      TabIndex        =   34
+      TabIndex        =   20
       Top             =   1150
       Width           =   2115
    End
@@ -45,7 +53,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   7
       Left            =   3120
-      TabIndex        =   32
+      TabIndex        =   18
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -67,7 +75,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A55
          Left            =   240
          List            =   "main.frx":9A57
-         TabIndex        =   33
+         TabIndex        =   19
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -88,7 +96,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   6
       Left            =   3120
-      TabIndex        =   30
+      TabIndex        =   16
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -110,7 +118,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A59
          Left            =   240
          List            =   "main.frx":9A5B
-         TabIndex        =   31
+         TabIndex        =   17
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -131,7 +139,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   5
       Left            =   3120
-      TabIndex        =   28
+      TabIndex        =   14
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -153,7 +161,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A5D
          Left            =   240
          List            =   "main.frx":9A5F
-         TabIndex        =   29
+         TabIndex        =   15
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -174,7 +182,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   4
       Left            =   3120
-      TabIndex        =   26
+      TabIndex        =   12
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -196,7 +204,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A61
          Left            =   240
          List            =   "main.frx":9A63
-         TabIndex        =   27
+         TabIndex        =   13
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -217,7 +225,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   3
       Left            =   3120
-      TabIndex        =   24
+      TabIndex        =   10
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -239,7 +247,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A65
          Left            =   240
          List            =   "main.frx":9A67
-         TabIndex        =   25
+         TabIndex        =   11
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -260,7 +268,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   2
       Left            =   3120
-      TabIndex        =   22
+      TabIndex        =   8
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -282,7 +290,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A69
          Left            =   240
          List            =   "main.frx":9A6B
-         TabIndex        =   23
+         TabIndex        =   9
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -303,7 +311,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   1
       Left            =   3120
-      TabIndex        =   20
+      TabIndex        =   6
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -325,7 +333,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A6D
          Left            =   240
          List            =   "main.frx":9A6F
-         TabIndex        =   21
+         TabIndex        =   7
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -346,7 +354,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   0
       Left            =   3120
-      TabIndex        =   18
+      TabIndex        =   4
       Top             =   720
       Width           =   3735
       Begin VB.ListBox winlist1 
@@ -367,7 +375,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A71
          Left            =   240
          List            =   "main.frx":9A73
-         TabIndex        =   19
+         TabIndex        =   5
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -387,7 +395,7 @@ Begin VB.Form main
       EndProperty
       Height          =   3135
       Left            =   6840
-      TabIndex        =   5
+      TabIndex        =   3
       Top             =   720
       Width           =   1935
       Begin VB.Image Image4 
@@ -400,14 +408,14 @@ Begin VB.Form main
          Visible         =   0   'False
          Width           =   510
       End
-      Begin VB.Image Image3 
+      Begin VB.Image NextDesk 
          Height          =   480
          Left            =   1320
          Picture         =   "main.frx":9A75
          Top             =   2280
          Width           =   480
       End
-      Begin VB.Image Image2 
+      Begin VB.Image PrevDesk 
          Height          =   480
          Left            =   120
          Picture         =   "main.frx":9EB7
@@ -487,303 +495,10 @@ Begin VB.Form main
          Width           =   480
       End
    End
-   Begin VB.Timer Timer2 
+   Begin VB.Timer hotKeyTimer 
       Interval        =   100
-      Left            =   240
-      Top             =   4200
-   End
-   Begin VB.Frame Frame2 
-      Height          =   3375
-      Left            =   0
-      TabIndex        =   0
-      Top             =   4560
-      Visible         =   0   'False
-      Width           =   7935
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   555
-         Index           =   0
-         Left            =   4800
-         MouseIcon       =   "main.frx":BE53
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":C15D
-         Style           =   1  'Graphical
-         TabIndex        =   17
-         TabStop         =   0   'False
-         Top             =   120
-         Width           =   555
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   1
-         Left            =   5520
-         MouseIcon       =   "main.frx":C467
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":C771
-         Style           =   1  'Graphical
-         TabIndex        =   16
-         TabStop         =   0   'False
-         Top             =   120
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   2
-         Left            =   6240
-         MouseIcon       =   "main.frx":CA7B
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":CD85
-         Style           =   1  'Graphical
-         TabIndex        =   15
-         TabStop         =   0   'False
-         Top             =   120
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   5
-         Left            =   6240
-         MouseIcon       =   "main.frx":D08F
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":D399
-         Style           =   1  'Graphical
-         TabIndex        =   14
-         TabStop         =   0   'False
-         Top             =   960
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   4
-         Left            =   5520
-         MouseIcon       =   "main.frx":D6A3
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":D9AD
-         Style           =   1  'Graphical
-         TabIndex        =   13
-         TabStop         =   0   'False
-         Top             =   960
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   3
-         Left            =   4800
-         MouseIcon       =   "main.frx":DCB7
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":DFC1
-         Style           =   1  'Graphical
-         TabIndex        =   12
-         TabStop         =   0   'False
-         Top             =   960
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   6
-         Left            =   4800
-         MouseIcon       =   "main.frx":E2CB
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":E5D5
-         Style           =   1  'Graphical
-         TabIndex        =   11
-         TabStop         =   0   'False
-         Top             =   1800
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   7
-         Left            =   5520
-         MouseIcon       =   "main.frx":E8DF
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":EBE9
-         Style           =   1  'Graphical
-         TabIndex        =   10
-         TabStop         =   0   'False
-         Top             =   1800
-         Width           =   550
-      End
-      Begin VB.CommandButton Command3 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Index           =   8
-         Left            =   6240
-         MaskColor       =   &H00000000&
-         MouseIcon       =   "main.frx":EEF3
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":F1FD
-         Style           =   1  'Graphical
-         TabIndex        =   9
-         TabStop         =   0   'False
-         Top             =   1800
-         Width           =   550
-      End
-      Begin VB.CommandButton Command4 
-         BackColor       =   &H00D8E9EC&
-         Enabled         =   0   'False
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   12
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Left            =   5520
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":F507
-         Style           =   1  'Graphical
-         TabIndex        =   8
-         TabStop         =   0   'False
-         Top             =   2640
-         Width           =   550
-      End
-      Begin VB.CommandButton Command2 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   12
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Left            =   4800
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":10041
-         Style           =   1  'Graphical
-         TabIndex        =   7
-         TabStop         =   0   'False
-         Top             =   2640
-         Width           =   550
-      End
-      Begin VB.CommandButton Command1 
-         BackColor       =   &H00D8E9EC&
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   12
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   550
-         Left            =   6240
-         MousePointer    =   99  'Custom
-         Picture         =   "main.frx":10483
-         Style           =   1  'Graphical
-         TabIndex        =   6
-         TabStop         =   0   'False
-         Top             =   2640
-         Width           =   550
-      End
-      Begin VB.TextBox txtevent 
-         Height          =   495
-         Left            =   1680
-         TabIndex        =   1
-         Text            =   "Text1"
-         Top             =   240
-         Width           =   1215
-      End
-   End
-   Begin VB.Timer Timer1 
-      Interval        =   100
-      Left            =   8280
-      Top             =   4560
+      Left            =   360
+      Top             =   3360
    End
    Begin VB.Frame winframe1 
       BackColor       =   &H00D8E9EC&
@@ -800,7 +515,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   8
       Left            =   3120
-      TabIndex        =   2
+      TabIndex        =   0
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -819,10 +534,10 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   8
-         ItemData        =   "main.frx":108C5
+         ItemData        =   "main.frx":BE53
          Left            =   240
-         List            =   "main.frx":108C7
-         TabIndex        =   3
+         List            =   "main.frx":BE55
+         TabIndex        =   1
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -832,14 +547,14 @@ Begin VB.Form main
       BackStyle       =   0  'Transparent
       Height          =   615
       Left            =   0
-      TabIndex        =   4
+      TabIndex        =   2
       Top             =   0
       Width           =   7335
    End
-   Begin VB.Image Image1 
+   Begin VB.Image Close 
       Height          =   375
       Left            =   8400
-      MouseIcon       =   "main.frx":108C9
+      MouseIcon       =   "main.frx":BE57
       MousePointer    =   99  'Custom
       Top             =   120
       Width           =   375
@@ -859,7 +574,7 @@ Begin VB.Form main
       ForeColor       =   &H00E0E0E0&
       Height          =   495
       Left            =   100
-      TabIndex        =   35
+      TabIndex        =   21
       Top             =   90
       Width           =   2415
    End
@@ -964,116 +679,260 @@ Private nic As NOTIFYICONDATA
 Dim curdesk As Integer
 Dim ksss As String
 
-
-Private Function movetodesktop(argto As Integer)
-    Dim u&
-    Dim hWnd&
-    Dim isWhiteListed As Boolean
-    u& = FillTaskListBox(winlist1(curdesk))
-    For i = 0 To winlist1(curdesk).ListCount - 1
-        winlist1(curdesk).ListIndex = i
-        isWhiteListed = check(winlist1(curdesk).Text, "Multi-Desk") Or check(winlist1(curdesk).Text, "Program Manager")
-        If Not isWhiteListed Then
-            hWnd& = RetHandle(winlist1(curdesk).Text)
-            u& = ShowWindow(hWnd&, SW_HIDE)
-        End If
-    Next
-    winframe1(curdesk).Visible = False
-    curdesk = argto
-    winframe1(curdesk).Visible = True
-    winframe1(curdesk).Caption = "Multi Desk " & (curdesk + 1)
-    For i = 0 To winlist1(curdesk).ListCount - 1
-        winlist1(curdesk).ListIndex = i
-        isWhiteListed = check(winlist1(curdesk).Text, "Multi-Desk")
-        If Not (isWhiteListed) Then
-            hWnd& = RetHandle(winlist1(curdesk).Text)
-            u& = ShowWindow(hWnd&, SW_SHOW)
-        End If
-    Next
-    setendiss (curdesk)
-End Function
-
-Private Sub showDesk(plusOrMinus As Integer)
-    Dim goIndex As Integer
-    goIndex = curdesk + plusOrMinus
-    movetodesktop (goIndex)
-End Sub
-
 Private Sub about_Click()
-    frmSplash.Show
+    formAbout.Show
 End Sub
+
+''Form Events
+Private Sub Form_Terminate()
+    Form_Unload (1)
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+    Cancel = 1
+End Sub
+
+Private Sub lblhead_MouseDown(Button As Integer, Shift As Integer, X As Single, y As Single)
+        ReleaseCapture
+        SendMessage Me.hWnd, &HA1, 2, 0&
+End Sub
+
+Private Sub close_Click()
+    Me.Visible = Not Me.Visible
+End Sub
+
+Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, y As Single)
+    If False Then
+        Exit Sub
+    ElseIf (Me.ScaleMode = vbPixels) Then
+        msg = X
+        Debug.Print X
+    Else
+        msg = X / Screen.TwipsPerPixelX
+    End If
+
+    Select Case msg
+        Case WM_MOUSEMOVE
+            txtevent.Text = "MOUSEMOVE"
+        Case WM_RBUTTONDBLCLK
+            txtevent.Text = "RBUTTONDBLCLK"
+        Case WM_RBUTTONDOWN
+            txtevent.Text = "RBUTTONDOWN"
+        Case WM_RBUTTONUP
+            Call SetForegroundWindow(Me.hWnd)
+            Me.PopupMenu mmnu
+        Case WM_MBUTTONDBLCLK
+            txtevent.Text = "MBUTTONDBLCLK"
+        Case WM_MBUTTONDOWN
+            txtevent.Text = "MBUTTONDOWN"
+        Case WM_MBUTTONUP
+            txtevent.Text = "MBUTTONUP"
+        Case WM_LBUTTONDBLCLK
+            txtevent.Text = "LBUTTONDBLCLK"
+        Case WM_LBUTTONDOWN
+            Me.WindowState = vbNormal
+        Case WM_LBUTTONUP
+            txtevent.Text = "LBUTTONUP"
+        Case Else
+            txtevent.Text = "Unknown" & Str$(msg)
+    End Select
+End Sub
+
+Private Sub Form_Load()
+    LoadApp
+End Sub
+'' End of Form Events
+'' Menu Events
+
+Private Sub hkc_Click() 'show options
+    configureHotKeyForm.Show
+End Sub
+
+Private Sub rd1_Click() 'desk 1
+    enableDesksInMenu
+    rd1.Enabled = False
+    rd1.Checked = True
+    movetodesktop (0)
+End Sub
+
+Private Sub rd2_Click() 'desk 2
+    enableDesksInMenu
+    rd2.Enabled = False
+    rd2.Checked = True
+    movetodesktop (1)
+End Sub
+
+Private Sub RD3_Click() 'desk 3
+    enableDesksInMenu
+    RD3.Enabled = False
+    RD3.Checked = True
+    movetodesktop (2)
+End Sub
+
+Private Sub rd4_Click() 'desk 4
+    enableDesksInMenu
+    rd4.Enabled = False
+    rd4.Checked = True
+    movetodesktop (3)
+End Sub
+
+Private Sub rd5_Click() 'desk 5
+    enableDesksInMenu
+    rd5.Enabled = False
+    rd5.Checked = True
+    movetodesktop (4)
+End Sub
+
+Private Sub rd6_Click() 'desk 6
+    enableDesksInMenu
+    rd6.Enabled = False
+    rd6.Checked = True
+    movetodesktop (5)
+End Sub
+
+Private Sub rd7_Click() 'desk 7
+    enableDesksInMenu
+    rd7.Enabled = False
+    rd7.Checked = True
+    movetodesktop (6)
+End Sub
+
+Private Sub rd8_Click() 'desk 8
+    enableDesksInMenu
+    rd8.Enabled = False
+    rd8.Checked = True
+    movetodesktop (7)
+End Sub
+
+Private Sub rd9_Click() 'desk 9
+    enableDesksInMenu
+    rd9.Enabled = False
+    rd9.Checked = True
+    movetodesktop (8)
+End Sub
+Private Sub nd_Click() ' next desktop
+    NextDesk_Click
+End Sub
+
+Private Sub pd_Click() 'previous desktop
+    PrevDesk_Click
+End Sub
+
+Private Sub sdm_Click() ' show desktop manager
+    showDesktopManager
+End Sub
+
+Private Sub disable_Click() 'disable
+    disableApp
+End Sub
+
+Private Sub exitmnu_Click() 'exit
+    ExitApp
+End Sub
+
+'' End of Menu Events
 
 Private Sub btndesk_Click(index As Integer)
-    Command3_Click (index)
+        Select Case index
+        Case 0
+            rd1_Click
+        Case 1
+            rd2_Click
+        Case 2
+            RD3_Click
+        Case 3
+            rd4_Click
+        Case 4
+            rd5_Click
+        Case 5
+            rd6_Click
+        Case 6
+            rd7_Click
+        Case 7
+            rd8_Click
+        Case 8
+            rd9_Click
+    End Select
 End Sub
 
-Private Sub Command1_Click()
-    If curdesk < 8 Then
-        showDesk (1)
-    End If
-End Sub
-
-Private Sub Command2_Click()
+Private Sub PrevDesk_Click()
     If curdesk > 0 Then
         showDesk (-1)
     End If
 End Sub
 
-Private Sub Command3_Click(index As Integer)
-    If index = 0 Then
-        rd1_Click
-    ElseIf index = 1 Then
-        rd2_Click
-    ElseIf index = 2 Then
-        RD3_Click
-    ElseIf index = 3 Then
-        rd4_Click
-    ElseIf index = 4 Then
-        rd5_Click
-    ElseIf index = 5 Then
-        rd6_Click
-    ElseIf index = 6 Then
-        rd7_Click
-    ElseIf index = 7 Then
-        rd8_Click
-    ElseIf index = 8 Then
-        rd9_Click
+Private Sub NextDesk_Click()
+    If curdesk < 8 Then
+        showDesk (1)
     End If
 End Sub
 
-Private Sub disable_Click()
-    disable.Caption = IIf(disable.Checked, "Disable MultiDesk", "Enable Multi Desk")
+''Functional Code
+Private Function listenToHotKey()
+Dim ctrl, alt, win As Integer
+        Dim cp, ap, wp As Boolean
+        Dim pressed As Boolean
+        cp = False
+        ap = False
+        wp = False
+        Dim hk As String
+        hk = gethk()
+        'Me.Caption = hk
+        ctrl = IIf(Mid(hk, 1, 1) = "1", 1, 0)
+        alt = IIf(Mid(hk, 2, 1) = "1", 1, 0)
+        win = IIf(Mid(hk, 3, 1) = "1", 1, 0)
     
-    'Disable
-    rd1.Enabled = disable.Checked
-    rd2.Enabled = disable.Checked
-    RD3.Enabled = disable.Checked
-    rd4.Enabled = disable.Checked
-    rd5.Enabled = disable.Checked
-    rd6.Enabled = disable.Checked
-    rd7.Enabled = disable.Checked
-    rd8.Enabled = disable.Checked
-    rd9.Enabled = disable.Checked
-    If (disable.Checked = True) Then
-        setendiss (curdesk)
-    End If
-    nd.Enabled = disable.Checked
-    pd.Enabled = disable.Checked
-    exitmnu.Enabled = disable.Checked
-    disable.Checked = Not disable.Checked
+        If ctrl = 1 Then
+            cp = (GetKeyState(17) < 0)
+        End If
     
-    showNotification curdesk, False
+        If alt = 1 Then
+            ap = (GetKeyState(18) < 0)
+        End If
     
-End Sub
+        If win = 1 Then
+            wp = (GetKeyState(91) < 0) Or (GetKeyState(92) < 0)
+        End If
+    
+        press = False
+        If hk = "101" Then
+            press = cp And wp
+        ElseIf hk = "010" Then
+            press = ap
+        ElseIf hk = "110" Then
+            press = cp And ap
+        ElseIf hk = "011" Then
+            press = ap And wp
+        ElseIf hk = "001" Then
+            press = wp
+        ElseIf hk = "100" Then
+            press = cp
+        ElseIf hk = "111" Then
+            press = cp And ap And wp
+        End If
+    
+        If press And (GetAsyncKeyState(39) = -32767 Or GetAsyncKeyState(40) = -32767) Then
+            NextDesk_Click
+        ElseIf press And (GetAsyncKeyState(37) = -32767 Or GetAsyncKeyState(38) = -32767) Then
+            PrevDesk_Click
+        End If
 
-Private Sub exitmnu_Click()
-    
+End Function
+
+Private Function showDesktopManager()
+    Me.Visible = True
+    SetWindowPos Me.hWnd, IIf(True, -1, -2), 0, 0, 0, 0, &H2 Or &H1 Or &H40
+    Dim u&
+    u& = FillTaskListBox(winlist1(curdesk))
+End Function
+
+Private Function ExitApp()
     'show windows from all applications
     Dim hWnd&
     For i = 0 To 8
         For iss = 0 To winlist1(i).ListCount - 1
             winlist1(i).ListIndex = iss
-            B = check(winlist1(i).Text, "Multi-Desk")
+            B = validateHidability(winlist1(i).Text, "Multi-Desk")
             If Not B Then
                 hWnd& = RetHandle(winlist1(i).Text)
                 u& = ShowWindow(hWnd&, SW_SHOW)
@@ -1082,11 +941,10 @@ Private Sub exitmnu_Click()
     Next
     
     showNotification 0, True 'remove tray icon
-    
-    End
-End Sub
+    End 'exit the app
+End Function
 
-Private Sub Form_Load()
+Private Function LoadApp()
 
     For i = 0 To winlist1.Count - 1
     winlist1(i).Enabled = True
@@ -1131,265 +989,79 @@ Private Sub Form_Load()
     End With
     Shell_NotifyIcon 0, nic
 
-End Sub
+End Function
 
-Private Sub Form_Terminate()
-    Form_Unload (1)
-End Sub
-
-Private Sub Form_Unload(Cancel As Integer)
-    Cancel = 1
-End Sub
-
-Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, y As Single)
-    If False Then
-        Exit Sub
-    ElseIf (Me.ScaleMode = vbPixels) Then
-        msg = X
-        Debug.Print X
-    Else
-        msg = X / Screen.TwipsPerPixelX
-    End If
-
-    'MsgBox msg
-    Select Case msg
-        Case WM_MOUSEMOVE
-            txtevent.Text = "MOUSEMOVE"
-        Case WM_RBUTTONDBLCLK
-            txtevent.Text = "RBUTTONDBLCLK"
-        Case WM_RBUTTONDOWN
-            txtevent.Text = "RBUTTONDOWN"
-        Case WM_RBUTTONUP
-            Call SetForegroundWindow(Me.hWnd)
-            Me.PopupMenu mmnu
-        Case WM_MBUTTONDBLCLK
-            txtevent.Text = "MBUTTONDBLCLK"
-        Case WM_MBUTTONDOWN
-            txtevent.Text = "MBUTTONDOWN"
-        Case WM_MBUTTONUP
-            txtevent.Text = "MBUTTONUP"
-        Case WM_LBUTTONDBLCLK
-            txtevent.Text = "LBUTTONDBLCLK"
-        Case WM_LBUTTONDOWN
-            Me.WindowState = vbNormal
-            'Call SetForegroundWindow(Me.hwnd)
-            'Me.Show
-        Case WM_LBUTTONUP
-            txtevent.Text = "LBUTTONUP"
-        Case Else
-            txtevent.Text = "Unknown" & Str$(msg)
-    End Select
-End Sub
-
-Private Sub hkc_Click()
-    hotkey.Show
-End Sub
-
-Private Sub Image1_Click()
-    Me.Visible = Not Me.Visible
-End Sub
-
-Private Sub Image2_Click()
-    Command2_Click
-End Sub
-
-Private Sub Image3_Click()
-    Command1_Click
-End Sub
-
-Private Sub lblhead_MouseDown(Button As Integer, Shift As Integer, X As Single, y As Single)
-        ReleaseCapture
-        SendMessage Me.hWnd, &HA1, 2, 0&
-End Sub
-
-Private Sub nd_Click()
-    Command1_Click
-End Sub
-
-Private Sub pd_Click()
-    Command2_Click
-End Sub
-
-Private Sub rd1_Click()
-    enbldesks
-    rd1.Enabled = False
-    rd1.Checked = True
-    movetodesktop (0)
-End Sub
-
-Private Sub rd2_Click()
-    enbldesks
-    rd2.Enabled = False
-    rd2.Checked = True
-    movetodesktop (1)
-End Sub
-
-Private Sub RD3_Click()
-    enbldesks
-    RD3.Enabled = False
-    RD3.Checked = True
-    movetodesktop (2)
-End Sub
-
-Private Sub rd4_Click()
-    enbldesks
-    rd4.Enabled = False
-    rd4.Checked = True
-    movetodesktop (3)
-End Sub
-
-Private Sub rd5_Click()
-    enbldesks
-    rd5.Enabled = False
-    rd5.Checked = True
-    movetodesktop (4)
-End Sub
-
-Private Sub rd6_Click()
-    enbldesks
-    rd6.Enabled = False
-    rd6.Checked = True
-    movetodesktop (5)
-End Sub
-
-Private Sub rd7_Click()
-    enbldesks
-    rd7.Enabled = False
-    rd7.Checked = True
-    movetodesktop (6)
-End Sub
-
-Private Sub rd8_Click()
-    enbldesks
-    rd8.Enabled = False
-    rd8.Checked = True
-    movetodesktop (7)
-End Sub
-
-Private Sub rd9_Click()
-    enbldesks
-    rd9.Enabled = False
-    rd9.Checked = True
-    movetodesktop (8)
-End Sub
-
-Private Sub sdm_Click()
-    Me.Visible = True
-    SetWindowPos Me.hWnd, IIf(True, -1, -2), 0, 0, 0, 0, &H2 Or &H1 Or &H40
-    Dim u&
-    u& = FillTaskListBox(winlist1(curdesk))
-End Sub
-
-Private Sub Timer2_Timer()
-
-    If disable.Checked Then
-        Exit Sub
-    End If
-
-    Dim ctrl, alt, win As Integer
-    Dim cp, ap, wp As Boolean
-    Dim pressed As Boolean
-    cp = False
-    ap = False
-    wp = False
-    Dim hk As String
-    hk = gethk()
-    'Me.Caption = hk
-    ctrl = IIf(Mid(hk, 1, 1) = "1", 1, 0)
-    alt = IIf(Mid(hk, 2, 1) = "1", 1, 0)
-    win = IIf(Mid(hk, 3, 1) = "1", 1, 0)
-
-    If ctrl = 1 Then
-        cp = (GetKeyState(17) < 0)
-    End If
-
-    If alt = 1 Then
-        ap = (GetKeyState(18) < 0)
-    End If
-
-    If win = 1 Then
-        wp = (GetKeyState(91) < 0) Or (GetKeyState(92) < 0)
-    End If
-
-    press = False
-    If hk = "101" Then
-        press = cp And wp
-    ElseIf hk = "010" Then
-        press = ap
-    ElseIf hk = "110" Then
-        press = cp And ap
-    ElseIf hk = "011" Then
-        press = ap And wp
-    ElseIf hk = "001" Then
-        press = wp
-    ElseIf hk = "100" Then
-        press = cp
-    ElseIf hk = "111" Then
-        press = cp And ap And wp
-    End If
-
-    If press And (GetAsyncKeyState(39) = -32767 Or GetAsyncKeyState(40) = -32767) Then
-        Command1_Click
-    ElseIf press And (GetAsyncKeyState(37) = -32767 Or GetAsyncKeyState(38) = -32767) Then
-        Command2_Click
-    End If
-
-End Sub
-
-Private Sub winlist1_Click(index As Integer)
-    winlist1(index).ToolTipText = winlist1(index).Text
-End Sub
-
-Public Function check(argsrc, argfind)
+Public Function validateHidability(argsrc, argfind)
     Dim h
     h = argsrc
     argsrc = Replace(argsrc, argfind, "~~~~")
     check = Not (argsrc = h)
 End Function
 
-Private Sub disbldesks()
-    rd1.Enabled = False
-    rd2.Enabled = False
-    RD3.Enabled = False
-    rd4.Enabled = False
-    rd5.Enabled = False
-    rd6.Enabled = False
-    rd7.Enabled = False
-    rd8.Enabled = False
-    rd9.Enabled = False
-End Sub
+Private Function movetodesktop(argto As Integer)
+    Dim u&
+    Dim hWnd&
+    Dim isWhiteListed As Boolean
+    u& = FillTaskListBox(winlist1(curdesk))
+    
+    'hide currently visible apps
+    For i = 0 To winlist1(curdesk).ListCount - 1
+        winlist1(curdesk).ListIndex = i
+        isWhiteListed = validateHidability(winlist1(curdesk).Text, "Multi-Desk") Or validateHidability(winlist1(curdesk).Text, "Program Manager")
+        If Not isWhiteListed Then
+            hWnd& = RetHandle(winlist1(curdesk).Text)
+            u& = ShowWindow(hWnd&, SW_HIDE)
+        End If
+    Next
+    winframe1(curdesk).Visible = False
+    
+    'show apps in the desktop needed to move
+    curdesk = argto
+    winframe1(argto).Visible = True
+    winframe1(argto).Caption = "Multi Desk " & (argto + 1)
+    For i = 0 To winlist1(argto).ListCount - 1
+        winlist1(argto).ListIndex = i
+        isWhiteListed = validateHidability(winlist1(argto).Text, "Multi-Desk")
+        If Not (isWhiteListed) Then
+            hWnd& = RetHandle(winlist1(argto).Text)
+            u& = ShowWindow(hWnd&, SW_SHOW)
+        End If
+    Next
+    enableAllAndDisableCurrentDesktopInMenu (argto)
+End Function
 
-Private Sub enbldesks()
-    rd1.Enabled = True
-    rd1.Checked = False
-    
-    rd2.Enabled = True
-    rd2.Checked = False
-    
-    RD3.Enabled = True
-    RD3.Checked = False
-    
-    rd4.Enabled = True
-    rd4.Checked = False
-    
-    rd5.Enabled = True
-    rd5.Checked = False
-    
-    rd6.Enabled = True
-    rd6.Checked = False
-    
-    rd7.Enabled = True
-    rd7.Checked = False
-    
-    rd8.Enabled = True
-    rd8.Checked = False
-    
-    rd9.Enabled = True
-    rd9.Checked = False
-End Sub
+Private Function showDesk(plusOrMinus)
+    Dim goIndex As Integer
+    goIndex = curdesk + plusOrMinus
+    movetodesktop (goIndex)
+End Function
 
-Public Function setendiss(argto)
-    enbldesks
+Private Function disableApp()
+    disable.Caption = IIf(disable.Checked, "Disable MultiDesk", "Enable Multi Desk")
+    
+    'Disable
+    rd1.Enabled = disable.Checked
+    rd2.Enabled = disable.Checked
+    RD3.Enabled = disable.Checked
+    rd4.Enabled = disable.Checked
+    rd5.Enabled = disable.Checked
+    rd6.Enabled = disable.Checked
+    rd7.Enabled = disable.Checked
+    rd8.Enabled = disable.Checked
+    rd9.Enabled = disable.Checked
+    If (disable.Checked = True) Then
+        enableAllAndDisableCurrentDesktopInMenu (curdesk)
+    End If
+    nd.Enabled = disable.Checked
+    pd.Enabled = disable.Checked
+    exitmnu.Enabled = disable.Checked
+    disable.Checked = Not disable.Checked
+    
+    showNotification curdesk, False
+End Function
+
+Public Function enableAllAndDisableCurrentDesktopInMenu(argto)
+    enableDesksInMenu
     
     Select Case argto
         Case 0
@@ -1427,9 +1099,8 @@ End Function
 
 
 Public Function showNotification(index, remove As Boolean)
-'tray icon as disabed or enabled
     Dim path As String
-    If disable.Checked Then
+    If disable.Checked Then 'tray icon as disabed or enabled
         path = App.path & "\icons\disabled\" & (curdesk + 1) & ".ico"
     Else
         path = App.path & "\icons\enabled\" & (curdesk + 1) & ".ico"
@@ -1451,3 +1122,48 @@ Public Function showNotification(index, remove As Boolean)
     End If
 
 End Function
+
+Private Function disableDesksInMenu()
+    rd1.Enabled = False
+    rd2.Enabled = False
+    RD3.Enabled = False
+    rd4.Enabled = False
+    rd5.Enabled = False
+    rd6.Enabled = False
+    rd7.Enabled = False
+    rd8.Enabled = False
+    rd9.Enabled = False
+End Function
+
+Private Function enableDesksInMenu()
+    rd1.Enabled = True
+    rd1.Checked = False
+    rd2.Enabled = True
+    rd2.Checked = False
+    RD3.Enabled = True
+    RD3.Checked = False
+    rd4.Enabled = True
+    rd4.Checked = False
+    rd5.Enabled = True
+    rd5.Checked = False
+    rd6.Enabled = True
+    rd6.Checked = False
+    rd7.Enabled = True
+    rd7.Checked = False
+    rd8.Enabled = True
+    rd8.Checked = False
+    rd9.Enabled = True
+    rd9.Checked = False
+End Function
+
+Private Sub hotKeyTimer_Timer()
+    If disable.Checked Then ' app disabled stop navigating
+        Exit Sub
+    Else
+        listenToHotKey
+    End If
+End Sub
+
+Private Sub winlist1_Click(index As Integer)
+    winlist1(index).ToolTipText = winlist1(index).Text
+End Sub

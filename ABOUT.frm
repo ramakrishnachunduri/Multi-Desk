@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form frmSplash 
+Begin VB.Form formAbout 
    BorderStyle     =   0  'None
    ClientHeight    =   4035
    ClientLeft      =   210
@@ -122,7 +122,7 @@ Begin VB.Form frmSplash
       Width           =   2415
    End
 End
-Attribute VB_Name = "frmSplash"
+Attribute VB_Name = "formAbout"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
