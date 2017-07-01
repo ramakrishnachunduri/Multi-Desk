@@ -4,7 +4,7 @@ Begin VB.Form main
    BackColor       =   &H80000005&
    BorderStyle     =   0  'None
    Caption         =   "Multi Desk"
-   ClientHeight    =   4035
+   ClientHeight    =   4065
    ClientLeft      =   4815
    ClientTop       =   2985
    ClientWidth     =   9015
@@ -13,7 +13,7 @@ Begin VB.Form main
    MaxButton       =   0   'False
    MinButton       =   0   'False
    Picture         =   "main.frx":0B3A
-   ScaleHeight     =   4035
+   ScaleHeight     =   4065
    ScaleWidth      =   9015
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
@@ -26,7 +26,7 @@ Begin VB.Form main
       Left            =   630
       ScaleHeight     =   1665
       ScaleWidth      =   2115
-      TabIndex        =   35
+      TabIndex        =   34
       Top             =   1150
       Width           =   2115
    End
@@ -45,7 +45,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   7
       Left            =   3120
-      TabIndex        =   33
+      TabIndex        =   32
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -67,7 +67,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A55
          Left            =   240
          List            =   "main.frx":9A57
-         TabIndex        =   34
+         TabIndex        =   33
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -88,7 +88,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   6
       Left            =   3120
-      TabIndex        =   31
+      TabIndex        =   30
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -110,7 +110,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A59
          Left            =   240
          List            =   "main.frx":9A5B
-         TabIndex        =   32
+         TabIndex        =   31
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -131,7 +131,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   5
       Left            =   3120
-      TabIndex        =   29
+      TabIndex        =   28
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -153,7 +153,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A5D
          Left            =   240
          List            =   "main.frx":9A5F
-         TabIndex        =   30
+         TabIndex        =   29
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -174,7 +174,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   4
       Left            =   3120
-      TabIndex        =   27
+      TabIndex        =   26
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -196,7 +196,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A61
          Left            =   240
          List            =   "main.frx":9A63
-         TabIndex        =   28
+         TabIndex        =   27
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -217,7 +217,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   3
       Left            =   3120
-      TabIndex        =   25
+      TabIndex        =   24
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -239,7 +239,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A65
          Left            =   240
          List            =   "main.frx":9A67
-         TabIndex        =   26
+         TabIndex        =   25
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -260,7 +260,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   2
       Left            =   3120
-      TabIndex        =   23
+      TabIndex        =   22
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -282,7 +282,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A69
          Left            =   240
          List            =   "main.frx":9A6B
-         TabIndex        =   24
+         TabIndex        =   23
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -303,7 +303,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   1
       Left            =   3120
-      TabIndex        =   21
+      TabIndex        =   20
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -325,7 +325,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A6D
          Left            =   240
          List            =   "main.frx":9A6F
-         TabIndex        =   22
+         TabIndex        =   21
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -346,7 +346,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   0
       Left            =   3120
-      TabIndex        =   19
+      TabIndex        =   18
       Top             =   720
       Width           =   3735
       Begin VB.ListBox winlist1 
@@ -367,7 +367,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":9A71
          Left            =   240
          List            =   "main.frx":9A73
-         TabIndex        =   20
+         TabIndex        =   19
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -387,7 +387,7 @@ Begin VB.Form main
       EndProperty
       Height          =   3135
       Left            =   6840
-      TabIndex        =   6
+      TabIndex        =   5
       Top             =   720
       Width           =   1935
       Begin VB.Image Image4 
@@ -517,7 +517,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":C15D
          Style           =   1  'Graphical
-         TabIndex        =   18
+         TabIndex        =   17
          TabStop         =   0   'False
          Top             =   120
          Width           =   555
@@ -540,7 +540,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":C771
          Style           =   1  'Graphical
-         TabIndex        =   17
+         TabIndex        =   16
          TabStop         =   0   'False
          Top             =   120
          Width           =   550
@@ -563,7 +563,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":CD85
          Style           =   1  'Graphical
-         TabIndex        =   16
+         TabIndex        =   15
          TabStop         =   0   'False
          Top             =   120
          Width           =   550
@@ -586,7 +586,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":D399
          Style           =   1  'Graphical
-         TabIndex        =   15
+         TabIndex        =   14
          TabStop         =   0   'False
          Top             =   960
          Width           =   550
@@ -609,7 +609,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":D9AD
          Style           =   1  'Graphical
-         TabIndex        =   14
+         TabIndex        =   13
          TabStop         =   0   'False
          Top             =   960
          Width           =   550
@@ -632,7 +632,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":DFC1
          Style           =   1  'Graphical
-         TabIndex        =   13
+         TabIndex        =   12
          TabStop         =   0   'False
          Top             =   960
          Width           =   550
@@ -655,7 +655,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":E5D5
          Style           =   1  'Graphical
-         TabIndex        =   12
+         TabIndex        =   11
          TabStop         =   0   'False
          Top             =   1800
          Width           =   550
@@ -678,7 +678,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":EBE9
          Style           =   1  'Graphical
-         TabIndex        =   11
+         TabIndex        =   10
          TabStop         =   0   'False
          Top             =   1800
          Width           =   550
@@ -702,7 +702,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":F1FD
          Style           =   1  'Graphical
-         TabIndex        =   10
+         TabIndex        =   9
          TabStop         =   0   'False
          Top             =   1800
          Width           =   550
@@ -724,7 +724,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":F507
          Style           =   1  'Graphical
-         TabIndex        =   9
+         TabIndex        =   8
          TabStop         =   0   'False
          Top             =   2640
          Width           =   550
@@ -745,7 +745,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":10041
          Style           =   1  'Graphical
-         TabIndex        =   8
+         TabIndex        =   7
          TabStop         =   0   'False
          Top             =   2640
          Width           =   550
@@ -766,7 +766,7 @@ Begin VB.Form main
          MousePointer    =   99  'Custom
          Picture         =   "main.frx":10483
          Style           =   1  'Graphical
-         TabIndex        =   7
+         TabIndex        =   6
          TabStop         =   0   'False
          Top             =   2640
          Width           =   550
@@ -774,18 +774,10 @@ Begin VB.Form main
       Begin VB.TextBox txtevent 
          Height          =   495
          Left            =   1680
-         TabIndex        =   2
+         TabIndex        =   1
          Text            =   "Text1"
          Top             =   240
          Width           =   1215
-      End
-      Begin VB.FileListBox File1 
-         Height          =   285
-         Left            =   120
-         Pattern         =   "*.ICO"
-         TabIndex        =   1
-         Top             =   360
-         Width           =   975
       End
    End
    Begin VB.Timer Timer1 
@@ -808,7 +800,7 @@ Begin VB.Form main
       Height          =   3135
       Index           =   8
       Left            =   3120
-      TabIndex        =   3
+      TabIndex        =   2
       Top             =   720
       Visible         =   0   'False
       Width           =   3735
@@ -830,7 +822,7 @@ Begin VB.Form main
          ItemData        =   "main.frx":108C5
          Left            =   240
          List            =   "main.frx":108C7
-         TabIndex        =   4
+         TabIndex        =   3
          TabStop         =   0   'False
          Top             =   360
          Width           =   3255
@@ -840,7 +832,7 @@ Begin VB.Form main
       BackStyle       =   0  'Transparent
       Height          =   615
       Left            =   0
-      TabIndex        =   5
+      TabIndex        =   4
       Top             =   0
       Width           =   7335
    End
@@ -867,7 +859,7 @@ Begin VB.Form main
       ForeColor       =   &H00E0E0E0&
       Height          =   495
       Left            =   100
-      TabIndex        =   36
+      TabIndex        =   35
       Top             =   90
       Width           =   2415
    End
@@ -972,6 +964,7 @@ Private nic As NOTIFYICONDATA
 Dim curdesk As Integer
 Dim ksss As String
 
+
 Private Function movetodesktop(argto As Integer)
     Dim u&
     Dim hWnd&
@@ -1069,24 +1062,8 @@ Private Sub disable_Click()
     exitmnu.Enabled = disable.Checked
     disable.Checked = Not disable.Checked
     
-    'tray icon as disabed
-    Dim path As String
-    If disable.Checked Then
-        path = App.path & "\dis\" & (curdesk + 1) & "d.ico"
-    Else
-        path = App.path & "\" & (curdesk + 1) & ".ico"
-    End If
-    Me.Icon = LoadPicture(path)
-    With nic
-        .cbSize = Len(nic)
-        .hWnd = Me.hWnd
-        .uId = vbNull
-        .uFlags = 7
-        .ucallbackMessage = 512 'On Mouse Move
-        .hIcon = Me.Icon
-        .szTip = Me.Caption + Char(0)
-    End With
-    Shell_NotifyIcon 1, nic
+    showNotification curdesk, False
+    
 End Sub
 
 Private Sub exitmnu_Click()
@@ -1104,21 +1081,13 @@ Private Sub exitmnu_Click()
         Next
     Next
     
-    'remove tray icon
-    With nic
-            .cbSize = Len(nic)
-            .hWnd = Me.hWnd
-            .uId = vbNull
-            .uFlags = 7
-            .ucallbackMessage = 512 'On Mouse Move
-            .hIcon = Me.Icon
-            .szTip = Me.Caption + Chr(0)
-    End With
-    Shell_NotifyIcon 2, nic
+    showNotification 0, True 'remove tray icon
+    
     End
 End Sub
 
 Private Sub Form_Load()
+
     For i = 0 To winlist1.Count - 1
     winlist1(i).Enabled = True
     Next
@@ -1144,16 +1113,13 @@ Private Sub Form_Load()
     'respond to hotkey
     Dim hk As String
     Open App.path & "\HKC" For Input As #1
-    File1.path = App.path
     Line Input #1, hk
     Close #1
     sethk (hk)
 
     'create tray icon
     curdesk = 0
-    File1.ListIndex = argto
-    path = App.path & "\" & File1.FileName
-    Me.Icon = LoadPicture(path)
+    Me.Icon = LoadPicture(App.path & "\icons\enabled\" & (curdesk + 1) & ".ico")
     With nic
         .cbSize = Len(nic)
         .hWnd = Me.hWnd
@@ -1161,7 +1127,7 @@ Private Sub Form_Load()
         .uFlags = 7
         .ucallbackMessage = 512 'On Mouse Move
         .hIcon = Me.Icon
-        .szTip = Me.Caption + Chr(0)
+        .szTip = Me.Caption
     End With
     Shell_NotifyIcon 0, nic
 
@@ -1423,8 +1389,6 @@ Private Sub enbldesks()
 End Sub
 
 Public Function setendiss(argto)
-    File1.ListIndex = argto
-    path = App.path & "\" & File1.FileName
     enbldesks
     
     Select Case argto
@@ -1457,8 +1421,20 @@ Public Function setendiss(argto)
             rd9.Checked = True
     End Select
     
+    showNotification argto, False
+
+End Function
+
+
+Public Function showNotification(index, remove As Boolean)
+'tray icon as disabed or enabled
+    Dim path As String
+    If disable.Checked Then
+        path = App.path & "\icons\disabled\" & (curdesk + 1) & ".ico"
+    Else
+        path = App.path & "\icons\enabled\" & (curdesk + 1) & ".ico"
+    End If
     Me.Icon = LoadPicture(path)
-    'curdesk = 0
     With nic
         .cbSize = Len(nic)
         .hWnd = Me.hWnd
@@ -1466,7 +1442,12 @@ Public Function setendiss(argto)
         .uFlags = 7
         .ucallbackMessage = 512 'On Mouse Move
         .hIcon = Me.Icon
-        .szTip = Me.Caption + Chr(0)
+        .szTip = Me.Caption
     End With
+    If remove Then
+    Shell_NotifyIcon 0, nic
+    Else
     Shell_NotifyIcon 1, nic
+    End If
+
 End Function
