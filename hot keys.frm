@@ -13,7 +13,7 @@ Begin VB.Form configureHotKeyForm
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   Picture         =   "hot keys.frx":628A
+   Picture         =   "hot keys.frx":5A5A2
    ScaleHeight     =   4035
    ScaleWidth      =   7440
    ShowInTaskbar   =   0   'False
@@ -58,10 +58,10 @@ Begin VB.Form configureHotKeyForm
    End
    Begin VB.CheckBox ctrl 
       Caption         =   "CTRL"
-      DownPicture     =   "hot keys.frx":EE7C
+      DownPicture     =   "hot keys.frx":63194
       Height          =   375
       Left            =   3360
-      MouseIcon       =   "hot keys.frx":F3EF
+      MouseIcon       =   "hot keys.frx":63707
       MousePointer    =   99  'Custom
       Style           =   1  'Graphical
       TabIndex        =   4
@@ -73,7 +73,7 @@ Begin VB.Form configureHotKeyForm
       Caption         =   "Start Multi Desk Along with Windows"
       Height          =   375
       Left            =   3360
-      MouseIcon       =   "hot keys.frx":F6F9
+      MouseIcon       =   "hot keys.frx":63A11
       MousePointer    =   99  'Custom
       Style           =   1  'Graphical
       TabIndex        =   3
@@ -84,10 +84,10 @@ Begin VB.Form configureHotKeyForm
    End
    Begin VB.CheckBox win 
       Caption         =   "WIN"
-      DownPicture     =   "hot keys.frx":FA03
+      DownPicture     =   "hot keys.frx":63D1B
       Height          =   375
       Left            =   3360
-      MouseIcon       =   "hot keys.frx":FF76
+      MouseIcon       =   "hot keys.frx":6428E
       MousePointer    =   99  'Custom
       Style           =   1  'Graphical
       TabIndex        =   1
@@ -97,10 +97,10 @@ Begin VB.Form configureHotKeyForm
    End
    Begin VB.CheckBox alt 
       Caption         =   "ALT"
-      DownPicture     =   "hot keys.frx":10280
+      DownPicture     =   "hot keys.frx":64598
       Height          =   375
       Left            =   3360
-      MouseIcon       =   "hot keys.frx":107F3
+      MouseIcon       =   "hot keys.frx":64B0B
       MousePointer    =   99  'Custom
       Style           =   1  'Graphical
       TabIndex        =   0
@@ -131,7 +131,7 @@ Begin VB.Form configureHotKeyForm
       Enabled         =   0   'False
       Height          =   480
       Left            =   5760
-      Picture         =   "hot keys.frx":10AFD
+      Picture         =   "hot keys.frx":64E15
       Top             =   1200
       Width           =   480
    End
@@ -139,7 +139,7 @@ Begin VB.Form configureHotKeyForm
       Enabled         =   0   'False
       Height          =   480
       Left            =   6480
-      Picture         =   "hot keys.frx":10F3F
+      Picture         =   "hot keys.frx":65257
       Top             =   1200
       Width           =   480
    End
@@ -147,7 +147,7 @@ Begin VB.Form configureHotKeyForm
       Enabled         =   0   'False
       Height          =   480
       Left            =   6120
-      Picture         =   "hot keys.frx":11381
+      Picture         =   "hot keys.frx":65699
       Top             =   840
       Width           =   480
    End
@@ -155,14 +155,14 @@ Begin VB.Form configureHotKeyForm
       Enabled         =   0   'False
       Height          =   480
       Left            =   6120
-      Picture         =   "hot keys.frx":117C3
+      Picture         =   "hot keys.frx":65ADB
       Top             =   1560
       Width           =   480
    End
    Begin VB.Image Image8 
       Height          =   360
       Left            =   4800
-      Picture         =   "hot keys.frx":11C05
+      Picture         =   "hot keys.frx":65F1D
       Stretch         =   -1  'True
       Top             =   1290
       Width           =   360
@@ -170,7 +170,7 @@ Begin VB.Form configureHotKeyForm
    Begin VB.Image Image2 
       Height          =   360
       Left            =   6960
-      MouseIcon       =   "hot keys.frx":12047
+      MouseIcon       =   "hot keys.frx":6635F
       MousePointer    =   99  'Custom
       Stretch         =   -1  'True
       ToolTipText     =   "Close"
@@ -279,7 +279,7 @@ Dim s As String
 s = ""
 s = reg.ReadString("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "MULTI DESK", "~~~~")
 
-If main.check(s, "~~~") Then
+If main.validateHidability(s, "~~~") Then
 st.Value = 0
 Else
 st.Value = 1

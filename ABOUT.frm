@@ -12,7 +12,7 @@ Begin VB.Form formAbout
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   Picture         =   "ABOUT.frx":628A
+   Picture         =   "ABOUT.frx":5A5A2
    ScaleHeight     =   4035
    ScaleWidth      =   7440
    ShowInTaskbar   =   0   'False
@@ -75,7 +75,7 @@ Begin VB.Form formAbout
    Begin VB.Label Label5 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
-      Caption         =   $"ABOUT.frx":EE7C
+      Caption         =   $"ABOUT.frx":63194
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -95,7 +95,7 @@ Begin VB.Form formAbout
    Begin VB.Image Image2 
       Height          =   360
       Left            =   6960
-      MouseIcon       =   "ABOUT.frx":EF6A
+      MouseIcon       =   "ABOUT.frx":63282
       MousePointer    =   99  'Custom
       Stretch         =   -1  'True
       ToolTipText     =   "Close"

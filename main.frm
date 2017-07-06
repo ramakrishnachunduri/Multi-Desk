@@ -3,7 +3,7 @@ Begin VB.Form main
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    BorderStyle     =   0  'None
-   Caption         =   "Multi Desk"
+   Caption         =   "Multi-Desk..."
    ClientHeight    =   4065
    ClientLeft      =   4815
    ClientTop       =   2985
@@ -12,7 +12,7 @@ Begin VB.Form main
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   Picture         =   "main.frx":0B3A
+   Picture         =   "main.frx":5A5A2
    ScaleHeight     =   4065
    ScaleWidth      =   9000
    ShowInTaskbar   =   0   'False
@@ -25,6 +25,7 @@ Begin VB.Form main
       TabIndex        =   22
       Text            =   "Text1"
       Top             =   3360
+      Visible         =   0   'False
       Width           =   255
    End
    Begin VB.PictureBox Picture1 
@@ -72,9 +73,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   7
-         ItemData        =   "main.frx":9A55
+         ItemData        =   "main.frx":634BD
          Left            =   240
-         List            =   "main.frx":9A57
+         List            =   "main.frx":634BF
          TabIndex        =   19
          TabStop         =   0   'False
          Top             =   360
@@ -115,9 +116,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   6
-         ItemData        =   "main.frx":9A59
+         ItemData        =   "main.frx":634C1
          Left            =   240
-         List            =   "main.frx":9A5B
+         List            =   "main.frx":634C3
          TabIndex        =   17
          TabStop         =   0   'False
          Top             =   360
@@ -158,9 +159,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   5
-         ItemData        =   "main.frx":9A5D
+         ItemData        =   "main.frx":634C5
          Left            =   240
-         List            =   "main.frx":9A5F
+         List            =   "main.frx":634C7
          TabIndex        =   15
          TabStop         =   0   'False
          Top             =   360
@@ -201,9 +202,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   4
-         ItemData        =   "main.frx":9A61
+         ItemData        =   "main.frx":634C9
          Left            =   240
-         List            =   "main.frx":9A63
+         List            =   "main.frx":634CB
          TabIndex        =   13
          TabStop         =   0   'False
          Top             =   360
@@ -244,9 +245,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   3
-         ItemData        =   "main.frx":9A65
+         ItemData        =   "main.frx":634CD
          Left            =   240
-         List            =   "main.frx":9A67
+         List            =   "main.frx":634CF
          TabIndex        =   11
          TabStop         =   0   'False
          Top             =   360
@@ -287,9 +288,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   2
-         ItemData        =   "main.frx":9A69
+         ItemData        =   "main.frx":634D1
          Left            =   240
-         List            =   "main.frx":9A6B
+         List            =   "main.frx":634D3
          TabIndex        =   9
          TabStop         =   0   'False
          Top             =   360
@@ -330,9 +331,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   1
-         ItemData        =   "main.frx":9A6D
+         ItemData        =   "main.frx":634D5
          Left            =   240
-         List            =   "main.frx":9A6F
+         List            =   "main.frx":634D7
          TabIndex        =   7
          TabStop         =   0   'False
          Top             =   360
@@ -372,9 +373,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   0
-         ItemData        =   "main.frx":9A71
+         ItemData        =   "main.frx":634D9
          Left            =   240
-         List            =   "main.frx":9A73
+         List            =   "main.frx":634DB
          TabIndex        =   5
          TabStop         =   0   'False
          Top             =   360
@@ -411,14 +412,14 @@ Begin VB.Form main
       Begin VB.Image NextDesk 
          Height          =   480
          Left            =   1320
-         Picture         =   "main.frx":9A75
+         Picture         =   "main.frx":634DD
          Top             =   2280
          Width           =   480
       End
       Begin VB.Image PrevDesk 
          Height          =   480
          Left            =   120
-         Picture         =   "main.frx":9EB7
+         Picture         =   "main.frx":6391F
          Top             =   2280
          Width           =   480
       End
@@ -426,7 +427,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   8
          Left            =   1320
-         Picture         =   "main.frx":A2F9
+         Picture         =   "main.frx":63D61
          Top             =   1680
          Width           =   480
       End
@@ -434,7 +435,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   7
          Left            =   720
-         Picture         =   "main.frx":A603
+         Picture         =   "main.frx":6406B
          Top             =   1680
          Width           =   480
       End
@@ -442,7 +443,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   6
          Left            =   120
-         Picture         =   "main.frx":A90D
+         Picture         =   "main.frx":64375
          Top             =   1680
          Width           =   480
       End
@@ -450,7 +451,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   5
          Left            =   1320
-         Picture         =   "main.frx":AC17
+         Picture         =   "main.frx":6467F
          Top             =   1080
          Width           =   480
       End
@@ -458,7 +459,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   4
          Left            =   720
-         Picture         =   "main.frx":AF21
+         Picture         =   "main.frx":64989
          Top             =   1080
          Width           =   480
       End
@@ -466,7 +467,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   3
          Left            =   120
-         Picture         =   "main.frx":B22B
+         Picture         =   "main.frx":64C93
          Top             =   1080
          Width           =   480
       End
@@ -474,7 +475,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   2
          Left            =   1320
-         Picture         =   "main.frx":B535
+         Picture         =   "main.frx":64F9D
          Top             =   480
          Width           =   480
       End
@@ -482,7 +483,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   1
          Left            =   720
-         Picture         =   "main.frx":B83F
+         Picture         =   "main.frx":652A7
          Top             =   480
          Width           =   480
       End
@@ -490,7 +491,7 @@ Begin VB.Form main
          Height          =   480
          Index           =   0
          Left            =   120
-         Picture         =   "main.frx":BB49
+         Picture         =   "main.frx":655B1
          Top             =   480
          Width           =   480
       End
@@ -534,9 +535,9 @@ Begin VB.Form main
          ForeColor       =   &H00400000&
          Height          =   2460
          Index           =   8
-         ItemData        =   "main.frx":BE53
+         ItemData        =   "main.frx":658BB
          Left            =   240
-         List            =   "main.frx":BE55
+         List            =   "main.frx":658BD
          TabIndex        =   1
          TabStop         =   0   'False
          Top             =   360
@@ -554,7 +555,7 @@ Begin VB.Form main
    Begin VB.Image Close 
       Height          =   375
       Left            =   8400
-      MouseIcon       =   "main.frx":BE57
+      MouseIcon       =   "main.frx":658BF
       MousePointer    =   99  'Custom
       Top             =   120
       Width           =   375
@@ -991,11 +992,11 @@ Private Function LoadApp()
 
 End Function
 
-Public Function validateHidability(argsrc, argfind)
+Public Function validateHidability(argsrc, argfind) As Boolean
     Dim h
     h = argsrc
     argsrc = Replace(argsrc, argfind, "~~~~")
-    check = Not (argsrc = h)
+    validateHidability = Not (argsrc = h)
 End Function
 
 Private Function movetodesktop(argto As Integer)
@@ -1007,7 +1008,7 @@ Private Function movetodesktop(argto As Integer)
     'hide currently visible apps
     For i = 0 To winlist1(curdesk).ListCount - 1
         winlist1(curdesk).ListIndex = i
-        isWhiteListed = validateHidability(winlist1(curdesk).Text, "Multi-Desk") Or validateHidability(winlist1(curdesk).Text, "Program Manager")
+        isWhiteListed = validateHidability(winlist1(curdesk).Text, "Multi-Desk...") Or validateHidability(winlist1(curdesk).Text, "Program Manager")
         If Not isWhiteListed Then
             hWnd& = RetHandle(winlist1(curdesk).Text)
             u& = ShowWindow(hWnd&, SW_HIDE)
@@ -1021,7 +1022,7 @@ Private Function movetodesktop(argto As Integer)
     winframe1(argto).Caption = "Multi Desk " & (argto + 1)
     For i = 0 To winlist1(argto).ListCount - 1
         winlist1(argto).ListIndex = i
-        isWhiteListed = validateHidability(winlist1(argto).Text, "Multi-Desk")
+        isWhiteListed = validateHidability(winlist1(argto).Text, "Multi-Desk...")
         If Not (isWhiteListed) Then
             hWnd& = RetHandle(winlist1(argto).Text)
             u& = ShowWindow(hWnd&, SW_SHOW)
